@@ -11,7 +11,7 @@ let accordionItems = document.querySelector('.accordionItems');
 let arrowDown = document.querySelector(".setup-container__down_btn");
 let arrowUp = document.querySelector(".setup-container__up_btn");
 
-let SetupSteps = document.querySelector(".accordion");
+let setupSteps = document.querySelector(".accordion");
 let progressNum = document.querySelector("#completed_indicator");
 let progressBar = document.querySelector("#progress-bar-fill");
 let checkBox = document.querySelectorAll(".accordion label");
@@ -69,13 +69,13 @@ ctaCancel.forEach(function (element) {
 arrowDown.addEventListener("click", () => {
   arrowDown.style.display = "none";
   arrowUp.style.display = "flex";
-  SetupSteps.style.display = "grid";
+  setupSteps.style.display = "grid";
 });
 
 arrowUp.addEventListener("click", () => {
   arrowDown.style.display = "flex";
   arrowUp.style.display = "none";
-  SetupSteps.style.display = "none";
+  setupSteps.style.display = "none";
 });
 
 

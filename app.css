@@ -1,5 +1,4 @@
 
-
 :root {
   --gray-50: #656266;
   --gray-100: #B5B5B5;
@@ -71,8 +70,6 @@ img {
   line-height: 140%;
 }
 
-
-/* HEADER STYLES */
 header {
     position: relative;
   display: flex;
@@ -98,15 +95,12 @@ header {
 
 }
 
-/* logo */
+
 .logo img{
   width: 32px;
   height: 32px;
 }
 
-
-
-/* form search */
 .search-box {
   display: flex;
   height: 32px;
@@ -116,7 +110,8 @@ header {
   flex: 1 0 0;
   border-radius: 8px;
   border: 1px solid var(--stroke-s200);
-  background: var(--gray-200);
+  border: 1px solid var(--stroke-s-200, #616161);
+    background: var(--grey-g-200, #303030);
   max-width: 480px;
 }
 
@@ -217,7 +212,7 @@ header {
   font-size: .85rem;
   font-weight: 500; 
   line-height: 15.60px; 
-  word-wrap: break-word"
+  
 }
 
 @media screen and (min-width :800px){
@@ -352,7 +347,6 @@ line-height: 140%;
     border: 2px solid #005BD3;
     background: #FFF;
     }
-
 
 
 .menuContainer ul{
@@ -602,7 +596,6 @@ main{
 
 /* onboarding guide styles  */
 .setup-container {
- 
   display: grid;
   gap: 16px;
   padding: 8px;
@@ -707,7 +700,6 @@ transition: all 400ms ease;
 }
 
 
-/* accordion dropdown styles*/
 .accordion {
   display: none;
   gap: 2px;
@@ -899,6 +891,12 @@ transition: all 400ms ease;
   display: none;
   -webkit-mask-image: linear-gradient(to bottom, rgba(255,255,255,1) 62%, rgba(255,255,255,0) 100%);
   mask-image: linear-gradient(to bottom, rgba(255,255,255,1) 62%, rgba(255,255,255,0) 100%);
+}
+
+.accordion__detail--link {
+  font-weight: 500;
+  color:  #005BD3;
+
 }
 
 @media screen and (min-width: 767px) {
